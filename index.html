@@ -5,30 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacau Show - Promoções</title>
     <style>
-        /* Aqui você pode adicionar estilos CSS para deixar o site mais bonito */
         body {
             font-family: sans-serif;
             margin: 0;
-            padding: 0;
+            background-color: #462c1b; /* Cor de fundo marrom */
+            color: #ffffff; /* Cor do texto branco */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         header {
-            background-color: #f0f0f0;
+            background-color: #e6d9c9; /* Cor de destaque rosa */
             padding: 20px;
             text-align: center;
+            width: 100%;
         }
-        h1 {
-            color: #8b0000; /* Cor de chocolate */
+
+        nav {
+            background-color: #462c1b; /* Cor de fundo marrom */
+            padding: 10px;
+            width: 100%;
+            text-align: center;
         }
+
+        nav a {
+            color: #ffffff; /* Cor do texto branco */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
         section {
             padding: 20px;
+            width: 80%;
         }
+
         .promocao {
+            background-color: #e6d9c9; /* Cor de destaque rosa */
             border: 1px solid #ddd;
             margin-bottom: 20px;
             padding: 10px;
         }
+
         img {
             max-width: 100%;
+        }
+
+        footer {
+            background-color: #462c1b; /* Cor de fundo marrom */
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            section {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -37,6 +71,13 @@
     <header>
         <h1>Cacau Show - Promoções</h1>
     </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Lojas</a>
+        <a href="#">Contato</a>
+    </nav>
 
     <section>
         <div class="promocao">
@@ -50,8 +91,7 @@
             <img src="imagem-aniversario.jpg" alt="Desconto de Aniversário">
             <p>Na semana do seu aniversário, ganhe 15% de desconto em compras acima de R$50.</p>
         </div>
-
-        </section>
+    </section>
 
     <footer>
         <p>&copy; 2023 Cacau Show</p>
